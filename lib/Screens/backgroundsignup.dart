@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:alphwiz/Screens/signinpage.dart';
+import 'package:alphwiz/Screens/otpscreen.dart';
 import 'package:alphwiz/Screens/signuppage/signup.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';

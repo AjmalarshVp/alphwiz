@@ -1,8 +1,8 @@
-import 'package:alphwiz/Screens/signuppage.dart';
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
 import 'package:sizer/sizer.dart';
 
 import '../backgroundsignup.dart';
@@ -21,7 +21,6 @@ class SignUpScreen extends StatelessWidget {
             children: [
               Stack(
                 children: [
-                  
                   Container(
                     decoration: BoxDecoration(
                         image: DecorationImage(
@@ -31,27 +30,14 @@ class SignUpScreen extends StatelessWidget {
                             fit: BoxFit.cover)),
                     height: 110,
                     width: double.infinity,
-
-                    // child: Padding(
-                    //   padding: const EdgeInsets.only(left: 90, top: 40),
-                    //   child: Text(
-                    //     'Sign Up',
-                    //     style: TextStyle(
-                    //         fontWeight: FontWeight.bold,
-                    //         fontSize: 40,
-                    //         color: Colors.blueGrey.withOpacity(0.5)),
-                    //   ),
-                    // ),
                   ),
                   SizedBox(
                     height: 1,
                   ),
-                  // Positioned(left: 0, top: 4, child: backbtn)
                   Padding(
                     padding: const EdgeInsets.only(top: 4),
                     child: GestureDetector(
                         child: const Align(
-                          
                             alignment: Alignment.topLeft,
                             child: CircleAvatar(
                               radius: 20,
@@ -81,8 +67,6 @@ class SignUpScreen extends StatelessWidget {
                   SizedBox(
                     height: 27,
                   ),
-
-                  //
 
                   label('Your Name'),
                   Textfield('Enter Your Name  here '),
@@ -157,20 +141,7 @@ class SignUpScreen extends StatelessWidget {
                                         fontSize: 13.sp),
                                   ))),
                             ),
-                            // child: _RegisterButton(
-                            //   ontap: () {
-                            //   //  otpVerification(context);
-                            //   },
-                            //  ),
                           ),
-                          // ButtonTheme(height: 100,
-                          //   child: ElevatedButton(
-                          //   onPressed: () {},
-                          //   child: Text('''SIGN UP''',style: TextStyle(color: Colors.black,fontSize: 18,fontWeight: FontWeight.bold),),
-                          //   style: ElevatedButton.styleFrom(primary: Colors.yellowAccent,
-                          //     shape: StadiumBorder()),
-                          //             ),
-                          // ),
                         ),
                       ],
                     ),
@@ -216,24 +187,6 @@ class SignUpScreen extends StatelessWidget {
 //////////////////////////////////////////////////////////////////////////////////
   Flexible secondTextField(String text) {
     return Flexible(
-//         child: ElevatedButton(
-//   onPressed: () {},
-//   child:Text("male"),
-//   style: ElevatedButton.styleFrom(
-//     primary: Colors.yellowAccent,
-//     shape: ,
-//   ),
-// ),
-        // TextFormField(textAlign: TextAlign.center,
-        //     decoration: InputDecoration(
-        //         border: OutlineInputBorder(
-        //           borderRadius: BorderRadius.circular(30.0),
-        //         ),
-        //         filled: true,
-        //         hintStyle: TextStyle(color: Colors.grey[800]),
-        //         hintText: text,
-        //         fillColor: kTextColor))
-        // );
         child: TextButton(
             child: Text(text.toUpperCase(),
                 style: TextStyle(fontSize: 14, color: Colors.white)),
